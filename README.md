@@ -1,8 +1,8 @@
 # Northwind Sales Analysis in Excel
 
-This project started as Excel Exercise 04 from the Data Analyst Training Program at Tose'e Institute, taught by Dr. Majid Eyvazian.
+I completed this project as Excel Exercise 04 in the Data Analyst Training Program at Tose'e Institute, taught by Dr. Majid Eyvazian.
 
-The original assignment focused on combining the Northwind tables with XLOOKUP, calculating net sales, and answering several sales questions with PivotTables and PivotCharts. I completed those requirements and then expanded the workbook with two dashboard pages, data-quality checks, a validation log, and project documentation.
+The assignment was to combine the Northwind tables with XLOOKUP, calculate net sales, and answer a set of sales questions with PivotTables and PivotCharts. After completing the required tasks, I added two dashboard pages, validation checks, and project documentation to make the workbook easier to review.
 
 ## Assignment Information
 
@@ -23,37 +23,37 @@ The main tasks were:
 - Analyze quarterly and monthly sales trends
 - Find the top products, categories, and customers
 - Compare category sales across quarters
-- Review the monthly trend for each category
+- Review the monthly sales trend for each category
 
-## My Approach
+## My Work
 
-I kept the original source tables in separate sheets and built clean analysis tables for products and sales. I added the fields needed for reporting, including customer, product, category, order date, month, quarter, and net sales.
+I kept the original Northwind tables in separate raw-data sheets and created new tables for the analysis. Customer, product, category, date, month, quarter, and net sales fields were added before building the PivotTables and charts.
 
 Net sales were calculated as:
 
 `UnitPrice × Quantity × (1 - Discount)`
 
-I used PivotTables as the support layer for the charts, then created an executive dashboard and a separate category analysis page. I also added validation checks so the final totals and lookup results could be reviewed before publishing the workbook.
+The finished workbook includes an executive dashboard, a separate category analysis page, data-quality checks, and a short documentation sheet.
 
 ## Dashboard
 
-### Executive Dashboard - KPIs, Sales Trends, Products, and Categories
+### Executive Dashboard - KPIs, Trends, Products, and Categories
 
-This section shows the main KPIs, monthly and quarterly sales trends, top products, and category performance.
+The first part of the dashboard includes the main KPIs, monthly and quarterly sales trends, top products, and category results.
 
-![Executive dashboard overview and trends](images/executive_dashboard_01.png)
+![Executive dashboard KPIs trends products and categories](images/executive_dashboard_01.png)
 
-### Executive Dashboard - Customer Results and Key Insights
+### Executive Dashboard - Customers and Key Insights
 
-This section shows the leading customers by net sales and summarizes the main findings from the analysis.
+The second part shows the leading customers by net sales and a short summary of the main findings.
 
-![Executive dashboard product category and customer results](images/executive_dashboard_02.png)
+![Executive dashboard customer results and key insights](images/executive_dashboard_02.png)
 
 ### Category Analysis
 
-The category page contains a quarterly heatmap and a monthly trend chart. The slicer can be used to review one category at a time.
+This page compares quarterly category sales with a heatmap. The monthly trend chart can be filtered by category using the slicer.
 
-![Category analysis dashboard](images/category_analysis.png)
+![Category sales analysis](images/category_analysis.png)
 
 ## Key Results
 
@@ -90,19 +90,19 @@ The category page contains a quarterly heatmap and a monthly trend chart. The sl
 - Data validation checks
 - Internal navigation links
 
-## Data Quality and Validation
+## Data Quality Checks
 
-The workbook checks row counts, duplicate records, missing values, lookup results, source-data changes, sales totals, and dashboard support calculations. The final validation sheet contains **22 passed checks** and no items requiring review.
+Before finalizing the workbook, I checked row counts, duplicate records, missing values, lookup results, changes to the source data, sales totals, and the calculations used by the dashboards. All **22 validation checks passed**, with no items left for review.
 
-One invalid `UnitPrice` value was found for ProductID 42. The original value was kept in the raw data, while the corrected value of **$14.00** was used in the analysis table and recorded in the validation log.
+One invalid `UnitPrice` value was found for ProductID 42. The original value remains in the raw-data sheet, while the corrected value of **$14.00** is used in the analysis table and recorded in the validation log.
 
 ## How to Use the Workbook
 
 1. Download `Fatemeh_Kamrani_Northwind_Sales_Analysis.xlsx`.
 2. Open it in Microsoft Excel desktop.
 3. Start with the `Executive_Dashboard` sheet.
-4. Open `Category_Analysis` for the heatmap and category trend.
-5. Use the slicer to select a category.
+4. Open `Category_Analysis` to review category performance.
+5. Use the slicer to change the category shown in the monthly trend chart.
 
 Excel desktop is recommended because the workbook uses PivotTables, PivotCharts, a slicer, and internal navigation.
 
@@ -111,7 +111,7 @@ Excel desktop is recommended because the workbook uses PivotTables, PivotCharts,
 - The analysis covers July 4, 1996 through May 6, 1998.
 - July 1996 and May 1998 are partial months.
 - Q2 1998 is a partial quarter.
-- The dataset does not include product cost, profit, or sales targets.
+- Product cost, profit, and sales targets are not included in the dataset.
 
 ## Project Files
 
@@ -131,3 +131,4 @@ Fatemeh_Kamrani_Northwind_Sales_Analysis/
 
 **Fatemeh Kamrani**  
 [GitHub Profile](https://github.com/fatemehkamrani79)
+
